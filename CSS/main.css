@@ -1,0 +1,2088 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    height: 350vh;
+    width: 100%;  
+   
+}
+.nav{
+    box-shadow: 15px 0px 15px rgba(0, 0, 0, 0.2);
+    justify-content: space-between;
+    background-attachment: fixed;
+    background-color: white;
+    position: fixed;
+    z-index: 5000;
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    top: 0;
+}
+.nav .logo h1{
+    font-size: 30px;
+    margin: 10px;
+}
+.nav .logo a{
+    text-decoration: none;
+    padding: 25px;
+    color: black;
+}
+.nav .logo span{
+    color: rgb(255, 136, 0);
+    font-size: 22px;
+}
+.nav .navItem{
+    display: block;
+    padding: 20px 60px;
+}
+.nav .navItem ul{
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+}
+.nav .navItem li{
+    list-style-type: none;
+}
+.nav .navItem ul li a{
+    text-decoration: none;
+    padding: 0px 15px;
+    cursor: pointer;
+    color: black;
+}
+.nav .navItem ul .sign{
+    text-decoration: none;
+    color: red;
+}
+.nav .navItem ul li a:hover{
+    color: rgb(201, 204, 38);
+}
+.nav .navItem li .sign:hover{
+    color: red;
+}
+.nav .navItem .toggler i{
+    font-size: 25px;
+    color: black;
+    display: none;
+}
+.arrow{
+    background-color: orange;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    position: fixed;
+    z-index: 55555;
+    color: white;
+    height: 35px;
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+}
+.arrow a{
+    text-decoration: none;
+    color: white;
+}
+.bodyData{
+    width: 100%;
+}
+.home{
+    background-image: url(../img/hero-bg.png);
+    background-position: center bottom;
+    background-attachment: fixed ;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    top: 100px;
+}
+.home .captionDetails{
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+}
+.home .captionTitle{
+    margin: 10px;
+}
+.home .captionTitle h1{
+    color: orange;
+    font-size: 60px;
+    margin: 5px;
+}
+.home .captionTitle p{
+    font-size: 20px;
+}
+.home .captionTitle img{
+    margin: 10px;
+    width: 50%;
+
+}
+.home button{
+    border: 1px solid orange;
+    background-color: white;
+    border-radius: 50px;
+    height: 50px;
+    width: 180px;
+}
+.home button:hover{
+    background-color: orange;
+}
+.home button a{
+    padding: 25px 50px;
+}
+.home button a:hover{
+    color: white;
+}
+.home button a{
+    text-decoration: none;
+    font-size: 15px;
+    color: orange;
+}
+.home .captionDetails{
+    margin-top: 25px;
+    font-size: 25px;
+}
+.home .captionDetails .appleStore{
+    margin: 0px 10px;
+    display: flex;
+}
+.home .captionDetails .googlePlay{
+    margin: 0px 10px;
+    display: flex;   
+}
+.home .captionDetails .appleStore:hover{
+    transition: all 0.2s;
+    cursor: pointer;
+    color: orange;
+}
+.home .captionDetails .googlePlay:hover{
+    transition: all 0.2s;
+    cursor: pointer;
+    color: orange;
+}
+.home .captionDetails .appleStore i{
+    font-size: 22px;
+    margin: 5px;
+}
+.home .captionDetails .googlePlay i{
+    font-size: 20px;
+    margin: 5px;
+}
+.about{
+    background-attachment: scroll;
+    background-color: white;
+    height: 100vh; 
+}
+.about .aboutDetails{
+    position: relative;
+    top: 30%;
+}
+.about .aboutDetails h1{
+    color: rgb(75, 75, 75);
+    text-align: center;
+    font-size: 40px;
+}
+.aboutDetails .detailsContant{
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+    top: 20vh;
+}
+.aboutDetails .detailsContant .vision{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+.aboutDetails .detailsContant .vision:hover{
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+.aboutDetails .detailsContant .vision img{
+    width: 100px;
+}
+.aboutDetails .detailsContant .vision h3{
+    font-size: 20px;
+    margin: 15px;
+}
+.aboutDetails .detailsContant .vision p{
+    color: rgb(75, 75, 75);
+    font-size: 15px;
+}
+.aboutDetails .detailsContant .mission{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+.aboutDetails .detailsContant .mission:hover{
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+.aboutDetails .detailsContant .mission img{
+    width: 100px;
+}
+.aboutDetails .detailsContant .mission h3{
+    font-size: 20px;
+    margin: 15px;
+}
+.aboutDetails .detailsContant .mission p{
+    color: rgb(75, 75, 75);
+    font-size: 15px;
+}
+.feature{
+    position: relative;
+    height: 90vh;
+}
+.feature .featureDetails{
+    text-align: center;
+    position: relative;
+    margin: 5px;
+    top: 20%;
+}
+.feature .featureDetails h1{
+    color: rgb(75, 75, 75);
+    font-size: 40px;
+    margin: 10px;
+}
+.feature .featureDetails h2{
+    font-size: 20px;
+    margin: 15px;
+}
+.feature .featureDetails p{
+    font-size: 25px;
+    margin: 10px;
+}
+.featureDetails .fDetailsContant{
+    justify-content: space-evenly;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    display: flex;
+    width: 90%;
+}
+.featureDetails .fDetailsContant img{
+    width: 100px;
+}
+.featureDetails .fDetailsContant .media{
+    padding: 25px 0px 30px;
+    margin: 15px;
+    width: 30%;
+}
+.featureDetails .fDetailsContant .media:hover{
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+.featureDetails .fDetailsContant .traning{
+    padding: 25px 0px 30px;
+    margin: 15px;
+    width: 30%;
+}
+.featureDetails .fDetailsContant .traning:hover{
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+.featureDetails .fDetailsContant .business{
+    padding: 25px 0px 30px;
+    margin: 15px;
+    width: 30%;
+}
+.featureDetails .fDetailsContant .business:hover{
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+.featureDetails .fDetailsContant .marketing{
+    padding: 25px 0px 30px;
+    margin: 15px;
+    width: 40%;  
+}
+.featureDetails .fDetailsContant .marketing:hover{
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+.featureDetails .fDetailsContant .software{
+    padding: 25px 0px 30px;
+    margin: 15px;
+    width: 40%;  
+}
+.featureDetails .fDetailsContant .software:hover{
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+.TimeLine{
+    justify-content: space-evenly;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    top: 100px;
+}
+.TimeLine h1{
+    color: rgb(75, 75, 75);
+    position: relative;
+    font-size: 40px;
+    padding-top: 140px;
+}
+.TimeLine p{
+    color: rgb(75, 75, 75);
+    font-size: 25px;
+    margin: 20px;
+}
+.TimeLineDetails{
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+.TimeLineDetails i{
+    color: rgb(78, 78, 78);
+    font-size: 40px;
+    padding: 25px;
+}
+.TimeLineDetails h2{
+    font-size: 25px;
+    margin: 20px 45px;
+}
+.TimeLineDetails .handshake{
+    width: 30%; 
+}
+.TimeLineDetails .handshake:hover{
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+.TimeLineDetails .scope{
+    width: 30%; 
+}
+.TimeLineDetails .scope:hover{
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+.TimeLineDetails .plane{
+    width: 30%; 
+}
+.TimeLineDetails .plane:hover{
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+.TimeLineDetails .Schedule{
+    width: 30%; 
+}
+.TimeLineDetails .Schedule:hover{
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+.TimeLineDetails .target{
+    width: 30%; 
+}
+.TimeLineDetails .target:hover{
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+.TimeLineDetails .user{
+    width: 30%; 
+}
+.TimeLineDetails .user:hover{
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+    box-sizing: content-box;
+}
+.contact{
+    position: relative;
+    height: 120vh;
+    top: 110px;
+}
+.contact h1{
+    text-align: center;
+    padding-top: 90px;
+    font-size: 30px;
+}
+.contact .contactDetails{
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact .contactDetails .contactWays{
+    width: 30%;
+}
+.contact .contactDetails .contactWays i{
+    font-size: 35px;
+    padding: 0px 15px;
+    color: orange;
+}
+.contactDetails .contactWays .location{
+    margin: 15px 0px;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+}
+.contactDetails .contactWays .mail{
+    margin: 15px 0px;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+}
+.contactDetails .contactWays .phone{
+    margin: 15px 0px;
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+}
+.contactDetails .contactWays .map{
+    width: 100%;
+    height: 50%;
+}
+.contact .formData{
+    position: relative;
+    text-align: center;
+}
+.contact .form input{
+    display: flex;
+    margin: 15px;
+    padding: 10px;
+    width: 500px;
+}
+.contact .form textarea{
+    min-height: 130px;
+    max-height: 130px;
+    margin: 5px 15px;
+    min-width: 502px;
+    max-width: 502px;
+    padding: 10px;
+}
+.contact .formData button{
+    background-color: orange;
+    padding: 15px 25px;
+    font-size: 15px;
+    color: white;
+    margin: auto;
+    border: none;
+}
+.footerData{
+    position: relative;
+    text-align: center;
+    top: 60px;
+}
+.footerData hr{
+    border: 5px solid gray;
+}
+.footerData p{
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+    top: 40px;
+}
+.footerData p a{
+    text-decoration: none;
+    color: orange;
+}
+/*-----------------------------------------*/
+.signIn{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+.formIN{
+    position: relative;
+    width: 70%;
+    top: 10%;
+}
+.Login{
+    border: 1px solid gray;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    margin: 60px auto;
+    display: table;
+    width: 50%;
+    top: 50px;
+}
+.Login .headForm h4{
+    background-color: rgba(196, 196, 196, 0.805);   
+    border-bottom: 1px solid rgb(63, 63, 63);
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: black;
+    padding: 10px; 
+}
+.Login .formItems{
+    margin: 50px auto;
+}
+.Login .formItems label{
+    font-size: 20px;
+    width: 140px;
+}
+.Login .formItems .Email{
+    justify-content: space-evenly;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Login .formItems .Email input{
+    margin: 0px 5px;
+    padding: 4px;
+    width: 340px;
+}
+.Login .formItems .Password{
+    justify-content: space-evenly;
+    margin: 5px 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Login .formItems .Password label{
+    margin: 5px;
+}
+.Login .formItems .Password input{
+    margin: 5px 0px 0px -30px;
+    width: 338px;
+    padding: 5px;
+}
+.Login .formItems .RememberME{
+    justify-content: space-evenly;
+    margin: 0% 40%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 160px;
+}
+.Login .formItems .endform{
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 20px;
+}   
+.formItems .endform button{
+    background-color: orange;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 150px;
+}
+.formItems .endform button:hover{
+    background-color: rgb(0, 167, 222);
+    transition: all 0.5s;
+    transform: scale(1.1,1.1);
+}
+.formItems .endform .forgot a{
+   text-decoration: underline;
+   font-size: 15px;
+   color: red;
+}    
+.footerDataIN{
+    position: relative;
+    text-align: center;
+    top: 0px;
+}
+.footerDataIN hr{
+    border: 5px solid gray;
+}
+.footerDataIN p{
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+    top: 40px;
+}
+.footerDataIN p a{
+    text-decoration: none;
+    color: orange;
+}
+/*-----------------------------------------*/
+.forgotPass{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+.fromReset{
+    position: relative;
+    width: 100%;
+}
+.Reset{
+    border: 1px solid gray;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    margin: 80px auto;
+    display: table;
+    width: 50%;
+    top: 50px;
+}
+.Reset .headForm h4{
+    background-color: rgba(196, 196, 196, 0.805);   
+    border-bottom: 1px solid rgb(63, 63, 63);
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: black;
+    padding: 10px; 
+}
+.Reset .formItems{
+    font-size: 20px;
+    margin: 50px auto;
+}
+.Reset .formItems .Email{
+    margin: 15px;
+}
+.Reset .formItems .Email input{
+    margin: 0px 5px;
+    padding: 4px;
+    width: 340px;
+} 
+.Reset .formItems .endform .buttonForm button{
+    margin: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    height: 40px;
+    width: 300px;
+}
+/*------------------------------------*/
+.signUp{
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+.fromReg{
+    position: relative;
+    margin: auto;
+    height: 65%;
+    width: 70%;
+}
+.Register{
+    border: 1px solid gray;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    margin: 50px auto;
+    display: table;
+    width: 100%;
+    top: 50px;
+}
+.Register .headForm h4{
+    background-color: rgba(196, 196, 196, 0.805);   
+    border-bottom: 1px solid rgb(63, 63, 63);
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: black;
+    padding: 10px; 
+}
+.Register .formItems{
+    margin: 20px auto;
+}
+.Register .formItems label{
+    font-size: 20px;
+    width: 160px;
+}
+.Register .formItems .Name{
+    justify-content: space-evenly;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Register .formItems .Name input{
+    margin: 0px 5px;
+    padding: 4px;
+    width: 340px;
+}
+.Register .formItems .Email{
+    justify-content: space-evenly;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Register .formItems .Email input{
+    margin: 0px 5px;
+    padding: 4px;
+    width: 340px;
+}
+.Register .formItems .Password{
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px 25px;
+}
+.Register .formItems .Password input{
+    margin: 5px -5px;
+    padding: 4px;
+    width: 340px;
+}
+.Register .formItems .ConfirmPassword{
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 15px;
+}
+.Register .formItems .ConfirmPassword input{
+    margin: 0px 5px;
+    padding: 4px;
+    width: 340px;
+}
+.Register .formItems .TypeofReg label{
+    margin: 0px 10px;
+}
+.Register .formItems .endform button{
+    margin: 15px;
+    border-radius: 15px;
+    height: 50px;
+    width: 150px;
+}
+.signUp .footerData{
+    position: relative;
+    text-align: center;
+    top: 35px;
+}
+/*-----------------------------------------*/
+@media(max-width: 1024px){
+    .nav .navItem{
+        padding: 15px 50px;
+    }
+    .nav .navItem ul{
+        display: none;
+    }
+    .nav .navItem ul li a{
+        display: none;
+    }
+    .nav .navItem .toggler i{
+        font-size: 25px;
+        display: block;
+    }
+    .home .captionTitle h1{
+        font-size: 60px;
+    }
+    .home .captionTitle p{
+        font-size: 20px;
+    }
+    .home .captionTitle img{
+        margin: 10px;
+        width: 60%;
+    }
+    .home button{
+        border-radius: 50px;
+        height: 50px;
+        width: 180px;
+    }
+    .home button a{
+        padding: 25px 50px;
+    }
+    .home button a{
+        font-size: 15px;
+    }
+    .home .captionDetails{
+        margin-top: 25px;
+        font-size: 25px;
+    }
+    .home .captionDetails .appleStore{
+        margin: 0px 10px;
+    }
+    .home .captionDetails .googlePlay{
+        margin: 0px 10px;
+    }
+    .home .captionDetails .appleStore i{
+        font-size: 22px;
+    }
+    .home .captionDetails .googlePlay i{
+        font-size: 20px;
+    }
+    .about{
+        height: 100vh; 
+    }
+    .about .aboutDetails{
+        top: 20%;
+    }
+    .about .aboutDetails h1{
+        font-size: 35px;
+    }
+    .aboutDetails .detailsContant{
+        flex-wrap: wrap;
+        top: 0vh;
+    }
+    .aboutDetails .detailsContant .vision{
+        padding: 20px;
+        margin: 10px;
+    }
+    .aboutDetails .detailsContant .vision img{
+        width: 100px;
+    }
+    .aboutDetails .detailsContant .vision h3{
+        font-size: 20px;
+        margin: 15px;
+    }
+    .aboutDetails .detailsContant .vision p{
+        font-size: 15px;
+    }
+    .aboutDetails .detailsContant .mission{
+        padding: 20px;
+        margin: 10px;
+    }
+    .aboutDetails .detailsContant .mission img{
+        width: 100px;
+    }
+    .aboutDetails .detailsContant .mission h3{
+        font-size: 20px;
+        margin: 15px;
+    }
+    .aboutDetails .detailsContant .mission p{
+        font-size: 15px;
+    }
+    .feature{
+        height: 70vh;
+    }
+    .feature .featureDetails{
+        margin: 5px;
+        top: 15%;
+    }
+    .feature .featureDetails h1{
+        font-size: 35px;
+        margin: 10px;
+    }
+    .feature .featureDetails h2{
+        font-size: 20px;
+        margin: 15px;
+    }
+    .feature .featureDetails p{
+        font-size: 25px;
+        margin: 10px;
+    }
+    .featureDetails .fDetailsContant{
+        margin: 10px auto;
+        width: 90%;
+    }
+    .featureDetails .fDetailsContant img{
+        width: 100px;
+    }
+    .featureDetails .fDetailsContant .media{
+        padding: 25px 0px 30px;
+        margin: 15px;
+        width: 40%;
+    }
+    .featureDetails .fDetailsContant .traning{
+        padding: 25px 0px 30px;
+        margin: 15px;
+        width: 40%;
+    }
+    .featureDetails .fDetailsContant .business{
+        padding: 25px 0px 30px;
+        margin: 15px;
+        width: 40%; 
+    }
+    .featureDetails .fDetailsContant .marketing{
+        padding: 25px 0px 30px;
+        margin: 15px;
+        width: 40%;  
+    }
+    .featureDetails .fDetailsContant .software{
+        padding: 25px 0px 30px;
+        margin: 15px;
+        width: 40%;  
+    }
+    .TimeLine{
+        justify-content: space-evenly;
+        height: 140vh;
+        width: 100%;
+        top: 320px;
+    }
+    .TimeLine h1{
+        font-size: 40px;
+        padding-top: 140px;
+    }
+    .TimeLine p{
+        font-size: 25px;
+        margin: 20px;
+    }
+    .TimeLineDetails i{
+        font-size: 40px;
+    }
+    .TimeLineDetails h2{
+        font-size: 25px;
+        margin: 20px 45px;
+    }
+    .TimeLineDetails .handshake{
+        width: 30%; 
+    }
+    .TimeLineDetails .scope{
+        width: 30%; 
+    }
+    .TimeLineDetails .plane{
+        width: 30%; 
+    }
+    .TimeLineDetails .Schedule{
+        width: 30%; 
+    }
+    .TimeLineDetails .target{
+        width: 30%; 
+    }
+    .TimeLineDetails .user{
+        width: 30%; 
+    }
+    .contact{
+        height: 120vh;
+        top: 100px;
+    }
+    .contact h1{
+        padding-top: 90px;
+        font-size: 30px;
+    }
+    .contact .contactDetails .contactWays{
+        width: 30%;
+    }
+    .contact .contactDetails .contactWays i{
+        font-size: 30px;
+    }
+    .contactDetails .contactWays .location{
+        font-size: 16px;
+    }
+    .contactDetails .contactWays .mail{
+        font-size: 16px;
+    }
+    .contactDetails .contactWays .phone{
+        font-size: 16px;
+    }
+    .contactDetails .contactWays .map{
+        width: 100%;
+        height: 50%;
+    }
+    .contact .form input{
+        margin: 15px;
+        padding: 10px;
+        width: 400px;
+    }
+    .contact .form textarea{
+        margin: 5px 15px;
+        min-width: 402px;
+        max-width: 402px;
+    }
+    .contact .formData button{
+        padding: 15px 25px;
+        font-size: 15px;
+        margin: auto;
+    }
+    .footerData{
+        top: 60px;
+    }
+    .footerData p{
+        font-size: 20px;
+        margin: 10px;
+        top: 40px;
+    }
+    /*-----------------------------------------*/
+    .signIn{
+        height: 100vh;
+        width: 100vw;
+    }
+    .formIN{
+        width: 70%;
+        top: 10%;
+    }
+    .Login{
+        border-radius: 15px;
+        margin: 60px auto;
+        width: 60%;
+        top: 50px;
+    }
+    .Login .headForm h4{
+        border-radius: 15px 15px 0px 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding: 10px; 
+    }
+    .Login .formItems{
+        margin: 50px auto;
+    }
+    .Login .formItems label{
+        font-size: 20px;
+        width: 140px;
+    }
+    .Login .formItems .Email{
+        margin: 15px;
+    }
+    .Login .formItems .Email input{
+        margin: 0px 5px;
+        padding: 4px;
+        width: 340px;
+    }
+    .Login .formItems .Password{
+        margin: 5px 0px;
+    }
+    .Login .formItems .Password label{
+        margin: 5px;
+    }
+    .Login .formItems .Password input{
+        margin: 5px 0px;
+        width: 340px;
+        padding: 5px;
+    }
+    .Login .formItems .RememberME{
+        margin: 0% 40%;
+        width: 160px;
+    }
+    .Login .formItems .endform{
+        margin: 20px;
+    }   
+    .Login .formItems .endform button{
+        margin-bottom: 15px;
+        border-radius: 15px;
+        font-size: 20px;
+        height: 50px;
+        width: 150px;
+    }
+    .Login .formItems .endform .forgot a{
+       font-size: 15px;
+    }    
+    .footerDataIN p{
+        font-size: 20px;
+        margin: 10px;
+        top: 40px;
+    }
+    /*-----------------------------------------*/
+    .forgotPass{
+        height: 100vh;
+        width: 100vw;
+    }
+    .fromReset{
+        width: 100%;
+    }
+    .Reset{
+        border-radius: 15px;
+        margin: 80px auto;
+        width: 60%;
+        top: 50px;
+    }
+    .Reset .headForm h4{
+        border-radius: 15px 15px 0px 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding: 10px; 
+    }
+    .Reset .formItems{
+        margin: 50px auto;
+    }
+    .Reset .formItems .Email{
+        margin: 15px;
+    }
+    .Reset .formItems .Email input{
+        margin: 0px 5px;
+        padding: 4px;
+        width: 340px;
+    } 
+    .Reset .formItems .endform .buttonForm button{
+        margin: 15px;
+        border-radius: 15px;
+        font-size: 20px;
+        height: 40px;
+        width: 300px;
+    }
+    /*------------------------------------*/
+    .signUp{
+        height: 100vh;
+        width: 100vw;
+    }
+    .fromReg{
+        margin: auto;
+        height: 65%;
+        width: 75%;
+    }
+    .Register{
+        border-radius: 15px;
+        margin: 50px auto;
+        width: 100%;
+        top: 50px;
+    }
+    .Register .headForm h4{
+        border-radius: 15px 15px 0px 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding: 10px; 
+    }
+    .Register .formItems{
+        margin: 20px auto;
+    }
+    .Register .formItems label{
+        font-size: 20px;
+        width: 160px;
+    }
+    .Register .formItems .Name{
+        margin: 15px;
+    }
+    .Register .formItems .Name input{
+        margin: 0px 5px;
+        padding: 4px;
+        width: 340px;
+    }
+    .Register .formItems .Email{
+        margin: 15px;
+    }
+    .Register .formItems .Email input{
+        margin: 0px 5px;
+        padding: 4px;
+        width: 340px;
+    }
+    .Register .formItems .Password{
+        margin: 5px 25px;
+    }
+    .Register .formItems .Password input{
+        margin: 5px -5px;
+        padding: 4px;
+        width: 340px;
+    }
+    .Register .formItems .ConfirmPassword{
+        margin: 15px 15px;
+    }
+    .Register .formItems .ConfirmPassword input{
+        margin: 0px 5px;
+        padding: 4px;
+        width: 340px;
+    }
+    .Register .formItems .TypeofReg label{
+        margin: 0px 10px;
+    }
+    .signUp .footerData{
+        top: 40px;
+    }
+}
+
+@media(max-width: 768px){
+    .nav .navItem{
+        padding: 15px 50px;
+    }
+    .nav .navItem ul{
+        display: none;
+    }
+    .nav .navItem ul li a{
+        display: none;
+    }
+    .nav .navItem .toggler i{
+        font-size: 25px;
+        display: block;
+    }
+    .home .captionTitle h1{
+        font-size: 40px;
+    }
+    .home .captionTitle p{
+        font-size: 20px;
+    }
+    .home .captionTitle img{
+        margin: 10px;
+        width: 80%;
+    }
+    .home button{
+        border-radius: 50px;
+        height: 50px;
+        width: 180px;
+    }
+    .home button a{
+        padding: 25px 50px;
+    }
+    .home button a{
+        font-size: 15px;
+    }
+    .home .captionDetails{
+        margin-top: 25px;
+        font-size: 25px;
+    }
+    .home .captionDetails .appleStore{
+        margin: 40px 10px;
+    }
+    .home .captionDetails .googlePlay{
+        margin: 40px 10px;
+    }
+    .home .captionDetails .appleStore i{
+        font-size: 22px;
+    }
+    .home .captionDetails .googlePlay i{
+        font-size: 20px;
+    }
+    .about{
+        height: 100vh; 
+    }
+    .about .aboutDetails{
+        top: 20%;
+    }
+    .about .aboutDetails h1{
+        font-size: 30px;
+    }
+    .aboutDetails .detailsContant{
+        flex-wrap: wrap;
+        top: 0vh;
+    }
+    .aboutDetails .detailsContant .vision{
+        padding: 20px;
+        margin: 10px;
+    }
+    .aboutDetails .detailsContant .vision img{
+        width: 100px;
+    }
+    .aboutDetails .detailsContant .vision h3{
+        font-size: 20px;
+        margin: 15px;
+    }
+    .aboutDetails .detailsContant .vision p{
+        font-size: 15px;
+    }
+    .aboutDetails .detailsContant .mission{
+        padding: 20px;
+        margin: 10px;
+    }
+    .aboutDetails .detailsContant .mission img{
+        width: 100px;
+    }
+    .aboutDetails .detailsContant .mission h3{
+        font-size: 20px;
+        margin: 15px;
+    }
+    .aboutDetails .detailsContant .mission p{
+        font-size: 15px;
+    }
+    .feature{
+        height: 70vh;
+    }
+    .feature .featureDetails{
+        margin: 5px;
+        top: 15%;
+    }
+    .feature .featureDetails h1{
+        font-size: 35px;
+        margin: 10px;
+    }
+    .feature .featureDetails h2{
+        font-size: 20px;
+        margin: 15px;
+    }
+    .feature .featureDetails p{
+        font-size: 25px;
+        margin: 10px;
+    }
+    .featureDetails .fDetailsContant{
+        margin: 10px auto;
+        width: 90%;
+    }
+    .featureDetails .fDetailsContant img{
+        width: 100px;
+    }
+    .featureDetails .fDetailsContant .media{
+        padding: 25px 0px 30px;
+        margin: 15px;
+        width: 40%;  
+    }
+    .featureDetails .fDetailsContant .traning{
+        padding: 25px 0px 30px;
+        margin: 15px;
+        width: 40%;  
+    }
+    .featureDetails .fDetailsContant .business{
+        padding: 25px 0px 30px;
+        margin: 15px;
+        width: 40%;  
+    }
+    .featureDetails .fDetailsContant .marketing{
+        padding: 25px 0px 30px;
+        margin: 15px;
+        width: 40%;  
+    }
+    .featureDetails .fDetailsContant .software{
+        padding: 25px 0px 30px;
+        margin: 15px;
+        width: 40%;  
+    }
+    .TimeLine{
+        justify-content: space-evenly;
+        height: 140vh;
+        width: 100%;
+        top: 350px;
+    }
+    .TimeLine h1{
+        font-size: 40px;
+        padding-top: 140px;
+    }
+    .TimeLine p{
+        font-size: 25px;
+        margin: 20px;
+    }
+    .TimeLineDetails i{
+        font-size: 35px;
+    }
+    .TimeLineDetails h2{
+        font-size: 16px;
+        margin: 20px 45px;
+    }
+    .TimeLineDetails .handshake{
+        width: 40%; 
+    }
+    .TimeLineDetails .scope{
+        width: 40%; 
+    }
+    .TimeLineDetails .plane{
+        width: 40%; 
+    }
+    .TimeLineDetails .Schedule{
+        width: 40%; 
+    }
+    .TimeLineDetails .target{
+        width: 40%; 
+    }
+    .TimeLineDetails .user{
+        width: 40%; 
+    }
+    .contact{
+        height: 120vh;
+        top: 250px;
+    }
+    .contact h1{
+        padding-top: 90px;
+        font-size: 30px;
+    }
+    .contact .contactDetails .contactWays{
+        width: 75%;
+    }
+    .contact .contactDetails .contactWays i{
+        font-size: 30px;
+    }
+    .contactDetails .contactWays .location{
+        font-size: 16px;
+    }
+    .contactDetails .contactWays .mail{
+        font-size: 16px;
+    }
+    .contactDetails .contactWays .phone{
+        font-size: 16px;
+    }
+    .contactDetails .contactWays .map{
+        width: 100%;
+        height: 50%;
+    }
+    .contact .form input{
+        margin: 15px;
+        padding: 10px;
+        width: 300px;
+    }
+    .contact .form textarea{
+        margin: 5px 15px;
+        min-width: 302px;
+        max-width: 302px;
+    }
+    .contact .formData button{
+        padding: 15px 25px;
+        font-size: 15px;
+        margin: auto;
+    }
+    .footerData{
+        top: 450px;
+    }
+    .footerData p{
+        font-size: 20px;
+        margin: 10px;
+        top: 40px;
+    }
+    /*-----------------------------------------*/
+    .signIn{
+        height: 100vh;
+        width: 100vw;
+    }
+    .formIN{
+        width: 70%;
+        top: 10%;
+    }
+    .Login{
+        border-radius: 15px;
+        margin: 50px auto;
+        width: 50%;
+        top: 50px;
+    }
+    .Login .headForm h4{
+        border-radius: 15px 15px 0px 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding: 10px; 
+    }
+    .Login .formItems{
+        margin: 30px auto;
+    }
+    .Login .formItems label{
+        font-size: 20px;
+        width: 140px;
+    }
+    .Login .formItems .Email{
+        margin: 15px;
+    }
+    .Login .formItems .Email input{
+        margin: 0px 5px;
+        padding: 4px;
+        width: 240px;
+    }
+    .Login .formItems .Password{
+        margin: 5px 0px;
+    }
+    .Login .formItems .Password label{
+        margin: 5px;
+    }
+    .Login .formItems .Password input{
+        margin: 5px 0px;
+        width: 240px;
+        padding: 5px;
+    }
+    .Login .formItems .RememberME{
+        margin: 0% 30%;
+        width: 160px;
+    }
+    .Login .formItems .endform{
+        margin: 20px;
+    }   
+    .Login .formItems .endform button{
+        margin-bottom: 15px;
+        border-radius: 15px;
+        font-size: 20px;
+        height: 50px;
+        width: 150px;
+    }
+    .Login .formItems .endform .forgot a{
+       font-size: 15px;
+    }    
+    .footerDataIN{
+       top: 70px;
+    }
+    .footerDataIN p{
+        font-size: 20px;
+        margin: 10px;
+        top: 40px;
+    }
+    /*-----------------------------------------*/
+    .forgotPass{
+        height: 100vh;
+        width: 100vw;
+    }
+    .fromReset{
+        width: 100%;
+    }
+    .Reset{
+        border-radius: 15px;
+        margin: 80px auto;
+        width: 60%;
+        top: 50px;
+    }
+    .Reset .headForm h4{
+        border-radius: 15px 15px 0px 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding: 10px; 
+    }
+    .Reset .formItems{
+        margin: 50px auto;
+    }
+    .Reset .formItems .Email{
+        margin: 15px;
+    }
+    .Reset .formItems .Email input{
+        margin: 0px 5px;
+        padding: 4px;
+        width: 340px;
+    } 
+    .Reset .formItems .endform .buttonForm button{
+        margin: 15px;
+        border-radius: 15px;
+        font-size: 20px;
+        height: 40px;
+        width: 300px;
+    }
+    .forgotPass .footerData{
+        position: relative;
+        text-align: center;
+        width: 100vw;
+        top: 60px;
+    }
+    .forgotPass .footerData hr{
+        border: 5px solid gray;
+        width: 100vw;
+    }
+    .forgotPass .footerData p{
+        position: relative;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 10px;
+        top: 40px;
+    }
+    .forgotPass .footerData p a{
+        text-decoration: none;
+        color: orange;
+    }
+    /*------------------------------------*/
+    .signUp{
+        height: 100vh;
+        width: 100vw;
+    }
+    .fromReg{
+        margin: auto;
+        height: 65%;
+    }
+    .Register{
+        border-radius: 15px;
+        margin: 50px auto;
+        width: 70%;
+        top: 50px;
+    }
+    .Register .headForm h4{
+        border-radius: 15px 15px 0px 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding: 10px; 
+    }
+    .Register .formItems{
+        margin: 20px auto;
+    }
+    .Register .formItems label{
+        font-size: 15px;
+        width: 160px;
+    }
+    .Register .formItems .Name{
+        margin: 15px;
+    }
+    .Register .formItems .Name input{
+        margin: 0px 5px;
+        padding: 4px;
+        width: 280px;
+    }
+    .Register .formItems .Email{
+        margin: 15px;
+    }
+    .Register .formItems .Email input{
+        margin: 0px 5px;
+        padding: 4px;
+        width: 280px;
+    }
+    .Register .formItems .Password{
+        margin: 5px 25px;
+    }
+    .Register .formItems .Password input{
+        margin: 5px -5px;
+        padding: 4px;
+        width: 280px;
+    }
+    .Register .formItems .ConfirmPassword{
+        margin: 15px 15px;
+    }
+    .Register .formItems .ConfirmPassword input{
+        margin: 0px 5px;
+        padding: 4px;
+        width: 280px;
+    }
+    .Register .formItems .TypeofReg label{
+        margin: 0px 10px;
+    }
+    .signUp .footerData{
+        position: relative;
+        text-align: center;
+        top: 90px;
+    }
+    .footerData p{
+        font-size: 16px;
+        margin: 10px;
+        top: 5px;
+    }
+}
+
+@media(max-width: 425px){
+    .nav .navItem{
+        padding: 15px 50px;
+    }
+    .nav .navItem ul{
+        display: none;
+    }
+    .nav .navItem ul li a{
+        display: none;
+    }
+    .nav .navItem .toggler i{
+        font-size: 25px;
+        display: block;
+    }
+    .home .captionTitle h1{
+        font-size: 40px;
+    }
+    .home .captionTitle p{
+        font-size: 20px;
+    }
+    .home .captionTitle img{
+        margin: 10px;
+        width: 80%;
+    }
+    .home button{
+        border-radius: 50px;
+        height: 50px;
+        width: 180px;
+    }
+    .home button a{
+        padding: 25px 50px;
+    }
+    .home button a{
+        font-size: 15px;
+    }
+    .home .captionDetails{
+        margin-top: 25px;
+        font-size: 25px;
+    }
+    .home .captionDetails .appleStore{
+        margin: 40px 10px;
+    }
+    .home .captionDetails .googlePlay{
+        margin: 40px 10px;
+    }
+    .home .captionDetails .appleStore i{
+        font-size: 22px;
+    }
+    .home .captionDetails .googlePlay i{
+        font-size: 20px;
+    }
+    .about{
+        height: 100vh; 
+    }
+    .about .aboutDetails{
+        top: 20%;
+    }
+    .about .aboutDetails h1{
+        font-size: 30px;
+    }
+    .aboutDetails .detailsContant{
+        flex-wrap: wrap;
+        top: 0vh;
+    }
+    .aboutDetails .detailsContant .vision{
+        padding: 20px;
+        margin: 10px;
+    }
+    .aboutDetails .detailsContant .vision img{
+        width: 100px;
+    }
+    .aboutDetails .detailsContant .vision h3{
+        font-size: 20px;
+        margin: 15px;
+    }
+    .aboutDetails .detailsContant .vision p{
+        font-size: 15px;
+    }
+    .aboutDetails .detailsContant .mission{
+        padding: 20px;
+        margin: 10px;
+    }
+    .aboutDetails .detailsContant .mission img{
+        width: 100px;
+    }
+    .aboutDetails .detailsContant .mission h3{
+        font-size: 20px;
+        margin: 15px;
+    }
+    .aboutDetails .detailsContant .mission p{
+        font-size: 15px;
+    }
+    .feature{
+        height: 70vh;
+    }
+    .feature .featureDetails{
+        margin: 5px;
+        top: 15%;
+    }
+    .feature .featureDetails h1{
+        font-size: 35px;
+        margin: 10px;
+    }
+    .feature .featureDetails h2{
+        font-size: 20px;
+        margin: 15px;
+    }
+    .feature .featureDetails p{
+        font-size: 25px;
+        margin: 10px;
+    }
+    .featureDetails .fDetailsContant{
+        margin: 10px auto;
+        width: 90%;
+    }
+    .featureDetails .fDetailsContant img{
+        width: 100px;
+    }
+    .featureDetails .fDetailsContant .media{
+        padding: 25px 0px 30px;
+        margin: 15px;
+        width: 40%;  
+    }
+    .featureDetails .fDetailsContant .traning{
+        padding: 25px 0px 30px;
+        margin: 15px;
+        width: 40%;  
+    }
+    .featureDetails .fDetailsContant .business{
+        padding: 25px 0px 30px;
+        margin: 15px;
+        width: 40%;  
+    }
+    .featureDetails .fDetailsContant .marketing{
+        padding: 25px 0px 30px;
+        margin: 15px;
+        width: 40%;  
+    }
+    .featureDetails .fDetailsContant .software{
+        padding: 25px 0px 30px;
+        margin: 15px;
+        width: 40%;  
+    }
+    .TimeLine{
+        justify-content: space-evenly;
+        height: 140vh;
+        width: 100%;
+        top: 340px;
+    }
+    .TimeLine h1{
+        font-size: 40px;
+        padding-top: 140px;
+    }
+    .TimeLine p{
+        font-size: 25px;
+        margin: 20px;
+    }
+    .TimeLineDetails i{
+        font-size: 35px;
+    }
+    .TimeLineDetails h2{
+        font-size: 16px;
+        margin: 20px 45px;
+    }
+    .TimeLineDetails .handshake{
+        width: 40%; 
+    }
+    .TimeLineDetails .scope{
+        width: 40%; 
+    }
+    .TimeLineDetails .plane{
+        width: 40%; 
+    }
+    .TimeLineDetails .Schedule{
+        width: 40%; 
+    }
+    .TimeLineDetails .target{
+        width: 40%; 
+    }
+    .TimeLineDetails .user{
+        width: 40%; 
+    }
+    .contact{
+        height: 120vh;
+        top: 250px;
+    }
+    .contact h1{
+        padding-top: 90px;
+        font-size: 30px;
+    }
+    .contact .contactDetails .contactWays{
+        width: 75%;
+    }
+    .contact .contactDetails .contactWays i{
+        font-size: 30px;
+    }
+    .contactDetails .contactWays .location{
+        font-size: 16px;
+    }
+    .contactDetails .contactWays .mail{
+        font-size: 16px;
+    }
+    .contactDetails .contactWays .phone{
+        font-size: 16px;
+    }
+    .contactDetails .contactWays .map{
+        width: 100%;
+        height: 50%;
+    }
+    .contact .form input{
+        margin: 15px;
+        padding: 10px;
+        width: 300px;
+    }
+    .contact .form textarea{
+        margin: 5px 15px;
+        min-width: 302px;
+        max-width: 302px;
+    }
+    .contact .formData button{
+        padding: 15px 25px;
+        font-size: 15px;
+        margin: auto;
+    }
+    .footerData{
+        top: 450px;
+    }
+    .footerData p{
+        font-size: 20px;
+        margin: 10px;
+        top: 40px;
+    }
+    /*-----------------------------------------*/
+    .signIn{
+        height: 100vh;
+        width: 100vw;
+    }
+    .formIN{
+        width: 70%;
+        top: 10%;
+    }
+    .Login{
+        border-radius: 15px;
+        margin: 50px auto;
+        width: 50%;
+        top: 50px;
+    }
+    .Login .headForm h4{
+        border-radius: 15px 15px 0px 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding: 10px; 
+    }
+    .Login .formItems{
+        margin: 30px auto;
+    }
+    .Login .formItems label{
+        font-size: 20px;
+        width: 140px;
+    }
+    .Login .formItems .Email{
+        margin: 15px;
+    }
+    .Login .formItems .Email input{
+        margin: 0px 5px;
+        padding: 4px;
+        width: 240px;
+    }
+    .Login .formItems .Password{
+        margin: 5px 0px;
+    }
+    .Login .formItems .Password label{
+        margin: 5px;
+    }
+    .Login .formItems .Password input{
+        margin: 5px 0px;
+        width: 240px;
+        padding: 5px;
+    }
+    .Login .formItems .RememberME{
+        margin: 0% 30%;
+        width: 160px;
+    }
+    .Login .formItems .endform{
+        margin: 20px;
+    }   
+    .Login .formItems .endform button{
+        margin-bottom: 15px;
+        border-radius: 15px;
+        font-size: 20px;
+        height: 50px;
+        width: 150px;
+    }
+    .Login .formItems .endform .forgot a{
+       font-size: 15px;
+    }    
+    .footerDataIN{
+       top: 70px;
+    }
+    .footerDataIN p{
+        font-size: 20px;
+        margin: 10px;
+        top: 40px;
+    }
+    /*-----------------------------------------*/
+    .forgotPass{
+        height: 100vh;
+        width: 100vw;
+    }
+    .fromReset{
+        width: 100%;
+    }
+    .Reset{
+        border-radius: 15px;
+        margin: 80px auto;
+        width: 60%;
+        top: 50px;
+    }
+    .Reset .headForm h4{
+        border-radius: 15px 15px 0px 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding: 10px; 
+    }
+    .Reset .formItems{
+        margin: 50px auto;
+    }
+    .Reset .formItems .Email{
+        margin: 15px;
+    }
+    .Reset .formItems .Email input{
+        margin: 0px 5px;
+        padding: 4px;
+        width: 250px;
+    } 
+    .Reset .formItems .endform .buttonForm button{
+        margin: 15px;
+        border-radius: 15px;
+        font-size: 20px;
+        height: 40px;
+        width: 250px;
+    }
+    .forgotPass .footerData{
+        position: relative;
+        text-align: center;
+        width: 100vw;
+        top: 60px;
+    }
+    .forgotPass .footerData hr{
+        border: 5px solid gray;
+        width: 100vw;
+
+    }
+    .forgotPass .footerData p{
+        position: relative;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 10px;
+        top: 40px;
+    }
+    .forgotPass .footerData p a{
+        text-decoration: none;
+        color: orange;
+    }
+    /*------------------------------------*/
+    .signUp{
+        height: 100vh;
+        width: 100vw;
+    }
+    .fromReg{
+        margin: auto;
+        height: 65%;
+    }
+    .Register{
+        border-radius: 15px;
+        margin: 50px auto;
+        width: 70%;
+        top: 50px;
+    }
+    .Register .headForm h4{
+        border-radius: 15px 15px 0px 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        padding: 10px; 
+    }
+    .Register .formItems{
+        margin: 5px auto;
+    }
+    .Register .formItems label{
+        font-size: 15px;
+        width: 160px;
+    }
+    .Register .formItems .Name{
+        margin: 15px;
+    }
+    .Register .formItems .Name input{
+        margin: 0px 5px;
+        padding: 4px;
+        width: 220px;
+    }
+    .Register .formItems .Email{
+        margin: 15px;
+    }
+    .Register .formItems .Email input{
+        margin: 0px 5px;
+        padding: 4px;
+        width: 220px;
+    }
+    .Register .formItems .Password{
+        margin: 5px 25px;
+    }
+    .Register .formItems .Password input{
+        margin: 5px -5px;
+        padding: 4px;
+        width: 220px;
+    }
+    .Register .formItems .ConfirmPassword{
+        margin: 15px 15px;
+    }
+    .Register .formItems .ConfirmPassword input{
+        margin: 0px 5px;
+        padding: 4px;
+        width: 220px;
+    }
+    .Register .formItems .TypeofReg label{
+        margin: 0px 25px auto;
+    }
+    .signUp .footerData{
+        position: relative;
+        text-align: center;
+        top: 95px;
+    }
+    .footerData p{
+        font-size: 16px;
+        margin: 10px;
+        top: 5px;
+    }
+}
+@media(max-width: 320px){
+    .nav .navItem{
+        padding: 15px 50px;
+    }
+    .nav .navItem ul{
+        display: none;
+    }
+    .nav .navItem ul li a{
+        display: none;
+    }
+    .nav .navItem .toggler i{
+        font-size: 25px;
+        display: block;
+    }
+    .home .captionTitle h1{
+        font-size: 35px;
+    }
+    .home .captionTitle p{
+        font-size: 20px;
+    }
+    .feature{
+        height: 180vh;
+    }
+    .TimeLine{
+        justify-content: space-evenly;
+        height: 140vh;
+        width: 100%;
+        top: 340px;
+    }
+    .TimeLine h1{
+        font-size: 40px;
+        padding-top: 140px;
+    }
+    .contact{
+        height: 120vh;
+        top: 250px;
+    }
+    .contact h1{
+        padding-top: 90px;
+        font-size: 30px;
+    }
+    .contact .contactDetails .contactWays{
+        width: 75%;
+    }
+    .contact .contactDetails .contactWays i{
+        font-size: 30px;
+    }
+    .contactDetails .contactWays .location{
+        font-size: 16px;
+    }
+    .contact .form input{
+        margin: 15px;
+        padding: 10px;
+        width: 200px;
+    }
+    .contact .form textarea{
+        margin: 5px 15px;
+        min-width: 202px;
+        max-width: 202px;
+    }
+    .contact .formData button{
+        padding: 10px 20px;
+        font-size: 15px;
+        margin: auto;
+    }
+}
